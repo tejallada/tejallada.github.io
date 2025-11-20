@@ -1,7 +1,7 @@
 <div class="about-header">
   <img src="assets/profile.jpg" alt="Portrait of J Rosser" class="about-avatar" width="160" height="160" loading="lazy" />
   <div class="about-header-content">
-    <h1 class="title">Hi I'm J!</h1>
+    <h1 class="title">Hi I'm Tej!</h1>
     <div class="about-socials" style="display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:0.5rem;">
   <a href="https://scholar.google.com/citations?user=OVXyJ5MAAAAJ&hl=en" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--color-accent-2);">
     <svg viewBox="0 0 24 24" role="img" aria-hidden="true" style="width:20px;height:20px;opacity:0.9;" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -36,10 +36,8 @@
 
 
 
-I'm a DPhil student in Machine Learning at the University of Oxford, focusing on AI Safety, Interpretability, and Multi-Agent Systems.
+I am a Computer Science student at the University of Florida with a strong interest in software engineering, algorithms, and applied machine learning. I enjoy building practical systems, exploring how data structures shape performance, and developing tools that solve real problems.
 
-Previously, I was a Research Scientist Intern at Spotify and worked with the UK AI Security Institute (AISI) on their Bounty Programme investigating automated design of agentic systems. I was also the founding Research Scientist at Convergence (acquired by Salesforce), contributing to Proxy, a state-of-the-art multimodal web agent with 100k+ users, and held senior engineering roles at Pynea and Artera, leading teams and shipping ML innovations.
+My notable projects include CipherSafe, a password strength detection system comparing Trie and HashMap performance on large datasets, a Clash Royale inspired imposter game implemented from scratch, and several C++ and python based programs involving binary file processing, image manipulation, and custom data structures. These projects have helped me deepen my understanding of efficient computation, memory management, and clean software design.
 
-I'm a member of LISA (London Initiative for Safe AI) and enjoy playing trumpet in a funk band, running bouldering socials, and helping new climbers get certified.
-
-P.S. There are some easter eggs on this website - find one and drop the emoji in your email subject line!
+Outside of classes, I spend a lot of time climbing, exploring new ideas in AI and physics, and taking on personal projects that push my skills forward. I like creating things that are both useful and fun, and I am always looking for my next opportunity to learn and build.

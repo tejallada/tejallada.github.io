@@ -8,7 +8,7 @@
     <span class="timeline-dot"></span>
     <div class="timeline-header">
       <span class="timeline-org">University of Florida</span>
-      <span class="timeline-role">DPhil in Machine Learning</span>
+      <span class="timeline-role">Computer Science Student </span>
       <span class="timeline-dates">Oct 2024 – <strong class="text-accent">Present</strong></span>
     </div>
     <div class="timeline-desc">Exploring the scaling laws of AI Safety.</div>
