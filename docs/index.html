@@ -1,111 +1,98 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J Rosser - Portfolio</title>
-    <meta name="description" content="DPhil student at Oxford studying Machine Learning and AI Safety">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        (function() {
-            try {
-                var saved = localStorage.getItem('theme');
-                var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
-                document.documentElement.setAttribute('data-theme', theme);
-            } catch (e) {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        })();
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tej Allada, University of Florida computer science student. Projects in software engineering, web development, and applied AI.">
+  <meta name="theme-color" content="#f4f6f2">
+  <meta property="og:title" content="Tej Allada | Software Portfolio">
+  <meta property="og:description" content="Software projects, technical skills, and leadership.">
+  <meta property="og:image" content="https://tejallada.github.io/assets/tej.jpg">
+  <link rel="canonical" href="https://tejallada.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tej Allada | Software Portfolio</title>
 </head>
-<body class="bg-global-bg text-global-text antialiased">
-    <!-- Fixed Header -->
-    <header id="main-header" class="group">
-        <div class="header-grid">
-            <!-- Logo -->
-            <a href="#" class="group header-logo flex items-center">
-                    <svg aria-hidden="true" class="me-3 h-10 w-6 sm:me-3 sm:h-20 sm:w-12" fill="none" focusable="false" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-                        <title>Logo</title>
-                        <g shape-rendering="crispEdges"><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="450" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="450" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="450" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="350" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="350" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="350" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="250" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="250" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="250" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="50" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="50" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="50" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="150" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="150" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="150" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="450" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="450" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="450" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="350" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="350" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="350" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="250" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="250" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="250" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="50" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="50" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="50" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g></g><symbol id="SvgjsSymbol1000"><polygon points="0,12.5 25,0 50,12.5 25,25"></polygon></symbol><symbol id="SvgjsSymbol1001"><polygon points="0,12.5 25,25 25,50 0,37.5"></polygon></symbol><symbol id="SvgjsSymbol1002"><polygon points="25,25 50,12.5 50,37.5 25,50"></polygon></symbol><g></g><symbol id="SvgjsSymbol1003"><polygon points="0,37.5 75,0 150,37.5 75,75"></polygon></symbol><symbol id="SvgjsSymbol1004"><polygon points="0,37.5 75,75 75,150 0,112.5"></polygon></symbol><symbol id="SvgjsSymbol1005"><polygon points="75,75 150,37.5 150,112.5 75,150"></polygon></symbol><symbol id="SvgjsSymbol1006"><polygon points="0,43.75 87.5,0 175,43.75 87.5,87.5"></polygon></symbol><symbol id="SvgjsSymbol1007"><polygon points="0,43.75 87.5,87.5 87.5,175 0,131.25"></polygon></symbol><symbol id="SvgjsSymbol1008"><polygon points="87.5,87.5 175,43.75 175,131.25 87.5,175"></polygon></symbol><symbol id="SvgjsSymbol1009"><polygon points="0,50 100,0 200,50 100,100"></polygon></symbol><symbol id="SvgjsSymbol1010"><polygon points="0,50 100,100 100,200 0,150"></polygon></symbol><symbol id="SvgjsSymbol1011"><polygon points="100,100 200,50 200,150 100,200"></polygon></symbol>
-                    </svg>
-            </a>
-
-            <!-- Title -->
-            <div class="header-title">
-                <span class="text-xl font-bold sm:text-2xl">J Rosser</span>
-            </div>
-
-            <!-- Desktop Navigation -->
-            <nav class="mobile-nav-menu header-nav sm:flex sm:flex-row sm:items-center" id="navigation-menu">
-                <a href="#about">About</a>
-                <!-- <a href="#news">News</a> -->
-                <a href="#publications">Publications</a>
-                <a href="#resume">Résumé</a>
-            </nav>
-
-            <!-- Controls -->
-            <div class="header-controls flex items-center gap-3">
-                <!-- Theme Toggle -->
-                <button id="theme-toggle" class="flex h-7 w-7 items-center justify-center rounded-md border border-accent-2/20 bg-accent-2/10 p-1 transition-colors hover:bg-accent-2/20" aria-label="Switch to dark theme">
-                    <svg class="sun-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="moon-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                    </svg>
-                </button>
-
-                <!-- Mobile Menu Toggle -->
-                <button id="toggle-navigation-menu" class="flex h-7 w-7 items-center justify-center rounded-md border border-accent-2/20 bg-accent-2/10 p-1 transition-colors hover:bg-accent-2/20 sm:hidden" aria-expanded="false" aria-label="Toggle navigation menu">
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell masthead">
+    <a class="brand" href="#top"><span aria-hidden="true">TA</span> Tej Allada</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">Computer Science · University of Florida</p>
+        <h1 id="name">Tej Allada<span>.</span></h1>
+        <p class="intro">I build web applications and explore how data structures and applied AI solve practical problems.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Explore my projects</a>
+          <a class="button" href="https://github.com/tejallada">GitHub</a>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="mx-auto max-w-3xl px-4 sm:px-8">
-        <!-- About Section -->
-        <section id="about" class="mb-16">
-            <div class="prose" id="about-content">
-                <div class="loading-spinner">Loading about content...</div>
-            </div>
-        </section>
-
-        <!-- News Section -->
-        <!-- <section id="news" class="mb-16">
-            <div class="prose" id="news-content">
-                <div class="loading-spinner">Loading news content...</div>
-            </div>
-        </section> -->
-
-        <!-- Publications Section -->
-        <section id="publications" class="mb-16">
-            <div class="prose" id="publications-content">
-                <div class="loading-spinner">Loading publications content...</div>
-            </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume" class="mb-16">
-            <div class="prose" id="resume-content">
-                <div class="loading-spinner">Loading resume content...</div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <div class="mx-auto max-w-3xl px-4 sm:px-8 py-8 text-center text-sm opacity-75">
-        <p>Built from scratch by me and Claude :)</p>
-    </div>
-
-    <script src="script.js"></script>
+      </div>
+      <figure class="portrait">
+        <img src="assets/tej.jpg" alt="Portrait of Tej Allada" width="460" height="460" fetchpriority="high">
+      </figure>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Selected projects</h2>
+      <article class="featured card">
+        <div class="card-copy">
+          <p class="eyebrow">Data structures · Project lead</p>
+          <h3>Cipher Safe</h3>
+          <p>A password-strength tool that gives users feedback on weak and predictable passwords. I led the project and benchmarked hash maps and tries to compare their runtime and memory trade-offs.</p>
+          <ul class="tags" aria-label="Project technologies"><li>Hash maps</li><li>Tries</li><li>Catch2</li></ul>
+          <a class="text-link" href="https://www.linkedin.com/in/tej-allada/#projects">Project on LinkedIn</a>
+        </div>
+        <div class="feature-panel">
+          <strong>14M+</strong>
+          <span>records analyzed for<br>weak password detection</span>
+        </div>
+      </article>
+      <div class="project-grid">
+        <article class="card card-copy">
+          <p class="eyebrow">Web development · In development</p>
+          <h3>Epsilon Tau Pi Tournament Dashboard</h3>
+          <p>A mobile-friendly Mario Kart tournament app for my fraternity. The project combines a React interface with Supabase for shared tournament data and organizer sign-in.</p>
+          <ul class="tags" aria-label="Project technologies"><li>React</li><li>Vite</li><li>Supabase</li></ul>
+        </article>
+        <article class="card card-copy">
+          <p class="eyebrow">Hackathon · ShellHacks 2025</p>
+          <h3>Meal.ai</h3>
+          <p>A meal-planning app built with a four-person team at ShellHacks. The project used Python and Flask alongside SQL and a web frontend.</p>
+          <ul class="tags" aria-label="Project technologies"><li>Python</li><li>Flask</li><li>SQL</li></ul>
+          <a class="text-link" href="https://devpost.com/software/meal-ai-kd8x2h">Project on Devpost</a>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical skills</h2>
+      <div class="skill-grid">
+        <article><h3>Languages</h3><ul><li>Python, C++, Java</li><li>JavaScript and SQL</li></ul></article>
+        <article><h3>Web development</h3><ul><li>React, Vite, HTML and CSS</li><li>Flask and Supabase</li></ul></article>
+        <article><h3>Testing &amp; analysis</h3><ul><li>Data structure benchmarking</li><li>Unit testing with Catch2</li></ul></article>
+      </div>
+    </section>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div><h2 id="about-title">Beyond the code</h2><p class="about-intro">I study computer science at the University of Florida. Outside class, I’ve trained and mentored Scouts through national leadership programs.</p></div>
+      <dl>
+        <div><dt>Education</dt><dd>University of Florida · Computer Science</dd></div>
+        <div><dt>Credential</dt><dd>Building Transformer-Based Natural Language Processing Applications · NVIDIA</dd></div>
+        <div><dt>Leadership</dt><dd>Eagle Scout · Youth leadership instructor and mentor</dd></div>
+      </dl>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <span>Tej Allada</span>
+    <nav aria-label="Professional profiles">
+      <a href="https://www.linkedin.com/in/tej-allada/">LinkedIn</a>
+      <a href="https://github.com/tejallada">GitHub</a>
+      <a href="https://devpost.com/tejallada">Devpost</a>
+    </nav>
+  </footer>
 </body>
 </html>
